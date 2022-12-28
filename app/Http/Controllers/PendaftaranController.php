@@ -14,7 +14,9 @@ class PendaftaranController extends Controller
      */
     public function index()
     {
-        //
+        $pendaftarans = Pendaftaran::all();
+
+        return view('index', compact ('pendaftarans'));
     }
 
     /**
