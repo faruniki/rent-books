@@ -8,8 +8,8 @@
     <center>
             <div class="navbar">
                 <p class="judul-navbar">Lab Komputer</p>
-                <p class="addnew"><a href="#" class="linkadd">HOME</a> </p>
-                <p class="delete"><a href="#" class="linkdelete">MAJORS</a> </p>
+                <p class="home"><a href="#" class="linkhome">HOME</a> </p>
+                <p class="majors"><a href="#" class="linkmajors">MAJORS</a> </p>
             </div>
     </center>
 </div>

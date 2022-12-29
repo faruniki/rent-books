@@ -26,7 +26,7 @@ body {
     display: flex;
 }
 
-.delete {
+.majors {
     margin: 0px 5px 0px 5px;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
@@ -36,19 +36,19 @@ body {
     border-left: 2px solid #C65959;
 }
 
-.linkdelete {
+.linkmajors {
     text-decoration: none;
     font-weight: 500;
     color: #000000;
 }
 
-.linkdelete:hover {
+.linkmajors:hover {
     background-color: #FFFFFF;
     color: #C65959;
     font-weight: 500;
 }
 
-.addnew {
+.home {
     margin: 0px 5px 0px 5px;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
@@ -58,13 +58,13 @@ body {
     border-left: 2px solid #4DA741;
 }
 
-.linkadd {
+.linkhome {
     text-decoration: none;
     font-weight: 500;
     color: #000000;
 }
 
-.linkadd:hover {
+.linkhome:hover {
     color: #4DA741;
     font-weight: 500;
     text-decoration: none;
