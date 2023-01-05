@@ -4,68 +4,115 @@ body {
     margin: 0;
 }
 
-.navbar {
-    height: 50px;
-    background-color: #363062;
-    padding-top: 25px ;
-    display: cover;
-}
-
-.navbar p{
-    display: inline;
+.atas {
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../img/bg-wk.png');
     
 }
 
-.judul-navbar {
-    font-size: 20px;
+.headernav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-right: 60px;
+    margin-left: 90px;
+    margin-bottom: 40px;
+}
+
+.logo {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    letter-spacing: 1px;
+}
+
+.navbar {
+    margin-top: 5px;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0px 20px 0px 20px;
+    text-decoration: none;
+    list-style: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    margin-right: 1028px;
-    padding-right: 50px;
-    color: #FFFFFF;
-    display: flex;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 1px;
 }
+
+
+.bg-wk {
+    margin-top: -10px;
+    width: 100%;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome {
+    margin-top: 130px;
+    margin-left: 92px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.ppdb-hl {
+    padding-top: 2px;
+    margin-left: 92px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: -10px;
+}
+
+.segera {
+    padding-top: 8px;
+    margin-bottom: 60px ;
+    margin-left: 92px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: -10px;
+}
+
+.button-daftar {
+    padding: 10px 20px 10px 20px;
+    margin-right: 1145px;
+    margin-bottom: 254px;
+    border-radius: 100px;
+    background-color: #0027BC;
+    margin-left: 92px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-top: -10px;
+}
+
+.button-daftar a{
+    text-decoration: none;
+    color: white;
+}
+
 
 .majors {
-    margin: 0px 5px 0px 5px;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
-    padding: 8px 16px 8px 16px;
-    border-radius: 3px;
-    border-left: 2px solid #C65959;
+    height: 500px;
+    display: inline-grid;
 }
 
-.linkmajors {
-    text-decoration: none;
-    font-weight: 500;
-    color: #000000;
-}
-
-.linkmajors:hover {
-    background-color: #FFFFFF;
-    color: #C65959;
-    font-weight: 500;
-}
-
-.home {
-    margin: 0px 5px 0px 5px;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FFFFFF;
-    padding: 8px 10px 8px 10px;
-    border-radius: 3px;
-    border-left: 2px solid #4DA741;
-}
-
-.linkhome {
-    text-decoration: none;
-    font-weight: 500;
-    color: #000000;
-}
-
-.linkhome:hover {
-    color: #4DA741;
-    font-weight: 500;
-    text-decoration: none;
-}
