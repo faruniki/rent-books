@@ -8,7 +8,7 @@ body {
     height: 700px;
     width: 100%;
     background-size: cover;
-    background-image: url('../img/bg-wk.png');
+    background-image: url('../img/bg-wk2.png');
     
 }
 
@@ -46,6 +46,10 @@ body {
     font-size: 12px;
     color: white;
     letter-spacing: 1px;
+}
+
+.navbar li:hover{
+    color: #FFBD59;
 }
 
 
@@ -105,14 +109,361 @@ body {
     margin-top: -10px;
 }
 
+.button-daftar:hover {
+    box-shadow: 0px 0px 30px 0.5px rgba(255, 255, 255, 0.334);
+}
+
 .button-daftar a{
     text-decoration: none;
     color: white;
 }
 
-
-.majors {
-    height: 500px;
-    display: inline-grid;
+.center1 {
+    margin-top: -115px;
+    margin-bottom: 10px;
 }
 
+.batas1 {
+    height: 1px;
+    width: 90%;
+    background-color: #626262;
+}
+
+.gariscui {
+    height: 5px;
+    width: 110px;
+    background-color: #011CAA;
+    margin-right: 900px;
+}
+
+.bawah-hl div {
+    height: 80px;
+    width: 300px;
+
+}
+
+.bawah-hl {
+    display: flex;
+    justify-content: space-around;
+}
+
+.motto-judul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: white;
+}
+
+.motto-desk {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: white;
+}
+
+.affirmation-judul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: white;
+}
+
+.affirmation-desk {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: white;
+}
+
+.attitude-judul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: white;
+}
+
+.attitude-desk {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: white;
+}
+
+.majors {
+    display: flex;
+    margin-top: 19px;
+}
+
+.majors-desk {
+    width: 1300px;
+    height: 500px;
+    background-color: #091B7B;
+}
+
+.majors-desk-isi {
+    margin: 85px 0px 0px 60px;
+}
+
+.majors-select {
+    width: 300px;
+    height: 500px;
+    background-color: #122CB5;
+}
+
+.majors-judul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    margin-left: 60px;
+    margin-top: 80px;
+}
+
+.majors-list {
+    padding-top: 10px;
+    line-height: 20px;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    margin-left: 20px;
+}
+
+.majors-list li:hover {
+    color: #FFBD59;
+}
+
+.pplg {
+    color: #FFBD59;
+}
+
+.pplg-h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+.pplg-h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+}
+
+.pplg-h2-2 {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+}
+
+.pplg-p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.pplg-p-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.majors-image {
+    display: absolute;
+    width: 300px;
+    height: 350px;
+    margin-left: 690px;
+    margin-top: -300px;
+}
+
+.button {
+    position: absolute;
+    margin-left: 880px;
+    margin-top: -30px;
+}
+
+.m-button {
+    color: white;
+    margin: 0px 20px;
+    font-size: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+}
+
+.m-button:hover{
+    color: #FFBD59;
+}
+
+.pertengahan {
+    margin-top: -20px;
+    height: 1100px;
+    width: 100%;
+    background-color: #F1F1F1;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 60px;
+}
+
+.testimonial div {
+    margin-top: 30px;
+    width: 209px;
+    height: 292px;
+    background-color: #FFFFFF;
+    border-left: 35px solid #365FFF;
+    border-radius: 5px;
+}
+
+.testi-judul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0034FF;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.profile-testi {
+    margin-top: 25px;
+    margin-left: -20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nama {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    color: #0034FF;
+    margin-left: 40px;
+    margin-top: -45px;
+}
+
+.lulusan {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    color: #0034FF;
+    margin-left: 40px;
+    margin-top: -10px;
+}
+
+.testi-isi {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: #0034FF;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.testi-from {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    color: #0034FF;
+    margin-right: 20px;
+    margin-top: 45px;
+    text-align: right;
+    bottom: 0px;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 50px;
+}
+
+.container2 div {
+    height: 350px;
+    width: 550px;
+    /* background-color: red; */
+    margin: 0px 10px;
+}
+
+/* .about-us {
+    padding-bottom: 20px;
+} */
+
+.about-judul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0034FF;
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.p-about {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: 100px;
+    margin-right: -120px;
+    font-size: 17px;
+    color: #0034FF;
+}
+
+.photo-about div {
+    height: 145px;
+    width: 285px;
+    margin: 20px 20px 20px 150px;
+    border-radius: 5px;
+}
+
+.photo-1 {
+    background-image: url("../img/siswa-siswi.jfif");
+    background-size: cover;
+}
+
+.photo-2 {
+    background-image: url("../img/siswi-wk.jfif");
+    background-size: cover;
+}
+
+.bawah {
+    height: 852px;
+    width: 100%;
+    background-color: #091B7B;
+}
+
+.contact-judul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-top: 90px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.bawah div{
+margin: auto;
+}
+
+.contact {
+    width: 1136px;
+    border-radius: 5px;
+    border-left: 75px solid #0525CE;
+    height: 586px;
+    background-color: #FFFFFF;
+}
+
+.logo-contact {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
