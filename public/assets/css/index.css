@@ -466,4 +466,154 @@ margin: auto;
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    margin-left: -35px;
+    margin-top: 50px;
+}
+
+.contact-us {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0629DC;
+    margin-top: -75px;
+    margin-left: 70px;
+}
+
+.contact-addres {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #0629DC;
+    margin-top: -10px;
+    margin-left: 70px;
+    margin-bottom: 60px;
+}
+
+.anakan-form{
+    margin: 10px 0px 10px 70px;
+    padding-left: 30px;
+    width: 745px;
+    height: 48px;
+    border-radius: 100px ;
+    border: solid 0px;
+    background-color: #E8E8E8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.submit-coi {
+    background-color: #0034FF;
+    width: 134px;
+    height: 36px;
+    border-radius: 100px;
+    border: solid 0px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-left: 70px;
+    margin-top: 35px;
+}
+
+.prohumasi {
+    color: #0629DC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    margin-top: -133px;
+    margin-right: 50px;
+}
+
+.gokil-ah {
+    color: #0629DC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 50px;
+    margin-bottom: 60px;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    margin: 10px auto;
+    font-size: 14px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    margin-left: -40px;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+
+.socials a:hover i {
+    color: #FFBD59;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
 }

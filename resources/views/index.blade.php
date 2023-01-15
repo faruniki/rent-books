@@ -126,8 +126,34 @@
     <p class="contact-judul">CONTACT</p>
     <div class="contact">
         <img src="assets/img/logo-wk.png" alt="" class="logo-contact">
+        <p class="contact-us">CONTACT US</p>
+        <p class="contact-addres">Jl. Raya Wangun No.21, RT.01/RW.06, Sindangsari,<br>Kec. Bogor Tim., Kota Bogor, Jawa Barat 16146</p>
+        <p class="prohumasi">prohumasi@smkwikrama.net</p>
+        <p class="gokil-ah">CS1 <b>+6281909242411</b><br>CS2 <b>+6281919242411</b></p>
+        <form action="#" class="form-contact">
+            <input class="anakan-form" type="text" placeholder="Full Name"> <br>
+            <input class="anakan-form" type="text" placeholder="Email Address"> <br>
+            <input class="anakan-form" type="text" placeholder="Message"> <br>
+            <input class="submit-coi" type="submit" value="SEND">
+        </form>
     </div>
 </div>
+<footer>
+        <div class="footer-content">
+            <h3>SMK Wikrama Bogor</h3>
+            <p>Padamu Negeri, Kami Berjanji. Lulus Wikrama, Siap Membangun Negeri.</p>
+            <ul class="socials">
+                <li><a target="_blank" href="https://web.facebook.com/smkwikrama/?locale=id_ID&_rdc=1&_rdr"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/smkwikrama?lang=en"><i class="fa fa-twitter"></i></a></li>
+                <li><a target="_blank" href="https://www.google.com/search?q=SMK+Wikrama+Bogor&rlz=1C1CHBD_enID1030ID1030&sxsrf=AJOqlzU-v9bSghbRfiFlTlk5bf1XmmtECg%3A1673771134277&ei=frjDY6rKEKrAz7sP56K1-AU&ved=0ahUKEwiqgZOvk8n8AhUq4HMBHWdRDV8Q4dUDCA8&uact=5&oq=SMK+Wikrama+Bogor&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzILCC4QgAQQxwEQrwEyBQgAEIAEMgUIABCABDIFCAAQgAQyBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB46BAgjECc6CAgAELEDEJECOgUIABCRAjoOCC4QgAQQsQMQxwEQ0QM6CAgAELEDEIMBOggIABCABBCxAzoOCC4QgAQQsQMQgwEQ1AI6BAgAEEM6CgguEMcBENEDEEM6CAguELEDEIAEOgsILhCABBDHARDRAzoOCC4QrwEQxwEQ1AIQgAQ6CggAEIAEEIcCEBQ6DgguEIAEEMcBEK8BENQCOhAILhCABBCHAhDHARCvARAUOgsILhCvARDHARCABDoFCAAQhgM6BwgjELACECc6DQguEK8BEMcBEIAEEA06DQguEIAEEMcBEK8BEA06BwgAEIAEEA06BggAEB4QDToSCC4QgAQQhwIQxwEQrwEQDRAUSgQIQRgASgQIRhgAUABY3yZg7ShoBnABeAGAAd4BiAGHGZIBBjEuMjAuMpgBAKABAcABAQ&sclient=gws-wiz-serp"><i class="fa fa-google-plus"></i></a></li>
+                <li><a target="_blank" href="https://www.youtube.com/@multimediawikrama7482"><i class="fa fa-youtube"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/school/smkwikramabogor/"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 Nazib Akbar</p>
+        </div>
+    </footer>
 </div>
 
 @endsection
