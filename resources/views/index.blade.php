@@ -151,7 +151,7 @@
             </ul>
         </div>
         <div class="footer-bottom">
-            <p>copyright &copy;2022 Nazib Akbar</p>
+            <p>copyright &copy;2023 Nazib Akbar</p>
         </div>
     </footer>
 </div>
