@@ -32,7 +32,8 @@ class CategorySeeder extends Seeder
             'horror',
             'thriller',
             'comedy',
-            'slice of life'
+            'slice of life',
+            'mystery'
         ];
 
         foreach($data as $value)
