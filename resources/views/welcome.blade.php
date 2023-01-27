@@ -146,7 +146,7 @@
 <!-- akhir contact -->
 
 <!-- footer -->
-<footer class="bg-secondary mt-5" style="height: 40px;">
+<footer class="bg-primary mt-5" style="height: 40px;">
     <p class="text-center pt-2">Created by <a href="https://github.com/faruniki" target="_blank" style="text-decoration: none; color: black;"><b>&#169;</b> Nazib Akbar</a></p>
 </footer>
 <!-- akhir footer -->
