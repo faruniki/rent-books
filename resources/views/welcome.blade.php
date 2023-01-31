@@ -129,10 +129,11 @@
     </div>
     <div class="row justify-content-center">
         <div class="col-md-7">
-            <form>
+            <form action="{{route('message')}}" method="POST">
+                @csrf
                 <div class="mb-3">
                     <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="name" name="name">
+                    <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
