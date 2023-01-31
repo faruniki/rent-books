@@ -7,10 +7,10 @@
     <title>Rent Books</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-<body>
+<body style="background-color: #222222;">
 
 <!-- navbar -->
-<nav class="navbar navbar-dark navbar-expand-lg bg-primary">
+<nav class="navbar navbar-dark navbar-expand-lg bg-danger">
     <div class="container">
         <a class="navbar-brand" href="/">
             <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Bootstrap" width="30" height="24">
@@ -34,7 +34,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-dark btn-sm" href="#">Login</a>
+                    <a class="nav-link btn btn-outline-danger btn-sm" href="{{route('login')}}">Login</a>
                 </li>
             </ul>
         </div>
@@ -70,10 +70,10 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-4">
-                <h2>Rent Books</h2>
-                <a href="#" class="btn btn-outline-primary mt-1">Ayo Daftar Sekarang!</a>
+                <h2 class="text-light">Rent Books</h2>
+                <a href="{{route('register')}}" class="btn btn-outline-danger mt-1 text-light">Ayo Daftar Sekarang!</a>
             </div>
-            <div class="col-8">
+            <div class="col-8 text-light">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio magni aperiam animi, quas adipisci ab voluptatum aliquid vero quos laudantium illum! Nihil doloribus qui quam deserunt amet odio voluptatibus tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis iste nulla magnam, neque repellat nemo laudantium vero porro cumque error non, quas adipisci.</p>
             </div>
         </div>
@@ -81,7 +81,7 @@
 <!-- akhir jumbotron -->
 
 <!-- card popular books -->
-<section style="background-color: #89C4E1;">
+<section style="background-color: #DC3545;">
     <div class="container my-5">
         <div class="row text-center">
             <h2 class="mt-5 text-light">Popular Books</h2>
@@ -93,7 +93,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Mistery Terakhir</h5>
                         <p class="card-text">Thriller, Mystery</p>
-                        <a href="#" class="btn btn-primary">Read</a>
+                        <a href="#" class="btn btn-danger">Read</a>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Uzumaki</h5>
                         <p class="card-text">Comic, Horror, Thriller</p>
-                        <a href="#" class="btn btn-primary">Read</a>
+                        <a href="#" class="btn btn-danger">Read</a>
                     </div>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Afeksi</h5>
                         <p class="card-text">Novel, Drama</p>
-                        <a href="#" class="btn btn-primary">Read</a>
+                        <a href="#" class="btn btn-danger">Read</a>
                     </div>
                 </div>
             </div>
@@ -125,21 +125,21 @@
 <!-- contact -->
 <div class="container">
     <div class="row text-center">
-        <h2>Message</h2>
+        <h2 class="text-light">Message</h2>
     </div>
     <div class="row justify-content-center">
         <div class="col-md-7">
             <form action="{{route('message')}}" method="POST">
                 @csrf
                 <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
+                    <label for="name" class="form-label text-light">Name</label>
                     <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
+                    <label for="message" class="form-label text-light">Message</label>
                     <textarea class="form-control" id="message" name="message"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="submit" class="btn btn-danger">Send</button>
             </form>
         </div>
     </div>
@@ -147,8 +147,8 @@
 <!-- akhir contact -->
 
 <!-- footer -->
-<footer class="bg-primary mt-5" style="height: 40px;">
-    <p class="text-center pt-2">Created by <a href="https://github.com/faruniki" target="_blank" style="text-decoration: none; color: black;"><b>&#169;</b> Nazib Akbar</a></p>
+<footer class="bg-danger mt-5" style="height: 40px;">
+    <p class="text-center text-light pt-2">Created by <a href="https://github.com/faruniki" target="_blank" style="text-decoration: none; color: #fff;"><b>&#169;</b> Nazib Akbar</a></p>
 </footer>
 <!-- akhir footer -->
 
