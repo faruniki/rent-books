@@ -22,12 +22,12 @@
                 <p class="text-center h5 fw-medium mb-5 mx-1 mx-md-4" >Sign Up</p>
 
                 <form class="mx-1 mx-md-4" action="{{route('login')}}" method="POST">
-
+                @csrf
 
                 <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input for="name" type="email" id="form3Example3c" class="form-control" />
+                      <input for="name" name="name" type="text" id="form3Example3c" class="form-control" />
                       <label class="form-label" for="form3Example3c">Your Name</label>
                     </div>
                   </div>
@@ -35,7 +35,7 @@
                   <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input for="email" type="email" id="form3Example3c" class="form-control" />
+                      <input for="email" name="email" type="email" id="form3Example3c" class="form-control" />
                       <label class="form-label" for="form3Example3c">Your Email</label>
                     </div>
                   </div>
@@ -43,7 +43,7 @@
                   <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input for="no_hp" type="number" id="form3Example3c" class="form-control" />
+                      <input for="no_hp" type="number" name="no_hp" id="form3Example3c" class="form-control" />
                       <label class="form-label" for="form3Example3c">Your Phone Number</label>
                     </div>
                   </div>
@@ -51,7 +51,7 @@
                   <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input for="address" type="text" id="form3Example3c" class="form-control" />
+                      <input for="address" type="text" name="address" id="form3Example3c" class="form-control" />
                       <label class="form-label" for="form3Example3c">Your Address</label>
                     </div>
                   </div>
@@ -59,7 +59,7 @@
                   <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input for="password" type="password" id="form3Example4cd" class="form-control" />
+                      <input for="password" type="password" name="password" id="form3Example4cd" class="form-control" />
                       <label class="form-label" for="form3Example4cd">Your Password</label>
                     </div>
                   </div>
