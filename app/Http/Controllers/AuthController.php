@@ -11,18 +11,16 @@ class AuthController extends Controller
         return view('auth.register');
     }
 
-    public function register(Request $request){
-        $credentials = $request->validate([
-            'name' => 'required',
+    public function storeRegister(Request $request){
+        $request->validate([
+            'username' => 'required',
             'email' => 'required',
             'np_hp' => 'required',
             'address' => 'required',
-            'password' => 'required'
+            'password' => 'required',
         ]);
 
-        $credentials['password'] = bcrypt($credentials['password']);
-
-        User::create($credentials);
+        User::create($request->all());
 
         return redirect('login');
     }

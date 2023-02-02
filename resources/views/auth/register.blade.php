@@ -21,47 +21,47 @@
 
                 <p class="text-center h5 fw-medium mb-5 mx-1 mx-md-4" >Sign Up</p>
 
-                <form class="mx-1 mx-md-4" action={{}}>
+                <form action="{{route('storeRegister')}}" method="post" class="mx-1 mx-md-4">
+                  @csrf
                 <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input for="name" name="name" type="text" id="form3Example3c" class="form-control" />
-                      <label class="form-label" for="form3Example3c">Your Name</label>
+                      <input for="username" name="username" type="text" id="username" class="form-control" />
+                      <label class="form-label" for="username">Your Name</label>
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input for="email" name="email" type="email" id="form3Example3c" class="form-control" />
-                      <label class="form-label" for="form3Example3c">Your Email</label>
+                      <input for="email" name="email" type="email" id="email" class="form-control" />
+                      <label class="form-label" for="email">Your Email</label>
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input for="no_hp" type="number" name="no_hp" id="form3Example3c" class="form-control" />
-                      <label class="form-label" for="form3Example3c">Your Phone Number</label>
+                      <input for="no_hp" type="number" name="no_hp" id="no_hp" class="form-control" />
+                      <label class="form-label" for="no_hp">Your Phone Number</label>
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input for="address" type="text" name="address" id="form3Example3c" class="form-control" />
-                      <label class="form-label" for="form3Example3c">Your Address</label>
+                      <input for="address" type="text" name="address" id="address" class="form-control" />
+                      <label class="form-label" for="address">Your Address</label>
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input for="password" type="password" name="password" id="form3Example4cd" class="form-control" />
-                      <label class="form-label" for="form3Example4cd">Your Password</label>
+                      <input for="password" type="password" name="password" id="password" class="form-control" />
+                      <label class="form-label" for="password">Your Password</label>
                     </div>
                   </div>
-
 
                   <div class="d-flex justify-content-center mt-4">
                     <button type="submit" class="btn btn-danger btn-sm">Register</button>
