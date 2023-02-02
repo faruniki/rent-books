@@ -19,7 +19,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('main', function () {
+    return view('layouts.main');
+});
+
 Route::get('/index-register',[AuthController::class, 'indexRegister'])->name('register');
+Route::post('/storeRegister',[AuthController::class, 'register'])->name('storeRegister');
+
 Route::get('/index-login',[AuthController::class, 'indexLogin'])->name('login');
 
 Route::post('/storeMessage',[MessageController::class,'message'])->name('message');

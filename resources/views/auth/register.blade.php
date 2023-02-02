@@ -21,9 +21,7 @@
 
                 <p class="text-center h5 fw-medium mb-5 mx-1 mx-md-4" >Sign Up</p>
 
-                <form class="mx-1 mx-md-4" action="{{route('login')}}" method="POST">
-                @csrf
-
+                <form class="mx-1 mx-md-4" action={{}}>
                 <div class="d-flex flex-row align-items-center mb-2">
                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
@@ -66,7 +64,7 @@
 
 
                   <div class="d-flex justify-content-center mt-4">
-                    <button type="submit" class="btn btn-danger btn-sm" href="#">Register</button>
+                    <button type="submit" class="btn btn-danger btn-sm">Register</button>
                   </div>
 
                   <div class="d-flex justify-content-center mt-3" style="margin-bottom: -30px;">
