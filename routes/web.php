@@ -45,6 +45,10 @@ Route::get('rent-log', function () {
     return view('dashboard.rent-log');
 });
 
+Route::get('edit', function () {
+    return view('dashboard.edit');
+});
+
 //route admin
 Route::get('/user', [AdminController::class, 'users'])->name('user');
 

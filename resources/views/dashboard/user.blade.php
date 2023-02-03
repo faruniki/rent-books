@@ -11,6 +11,7 @@
       <th scope="col">Email</th>
       <th scope="col">Phone Number</th>
       <th scope="col">Address</th>
+      <th scope="col">Action</th>
     </tr>
   </thead>
   <?php $i = 1; ?>
@@ -23,6 +24,9 @@
       <td>{{$users->email}}</td>
       <td>{{$users->no_hp}}</td>
       <td>{{$users->address}}</td>
+      <form action="">
+        <button>Edit</button>
+      </form>
     </tr>
   </tbody>
   @endforeach

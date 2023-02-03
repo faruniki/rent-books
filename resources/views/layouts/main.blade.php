@@ -32,7 +32,7 @@
                     <a href="/book" @if(request()->route()->uri == 'book')class='active' @endif class="sidebar-title"><i class="bi bi-book"></i>Books</a>
                     <a href="/category" @if(request()->route()->uri == 'category')class='active' @endif class="sidebar-title"><i class="bi bi-tags"></i>Categories</a>
                     <a href="/rent-log" @if(request()->route()->uri == 'rent-log')class='active' @endif class="sidebar-title"><i class="bi bi-door-open"></i>Rent Logs</a>
-                    <a href="" class="sidebar-title"><i class="bi bi-box-arrow-left"></i>Logout</a>
+                    <a href="/login" class="sidebar-title"><i class="bi bi-box-arrow-left"></i>Logout</a>
                 </div>
                 <div class="content col-lg-10">
                     @yield('content')

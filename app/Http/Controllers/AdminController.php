@@ -16,4 +16,8 @@ class AdminController extends Controller
         return view('dashboard.user', compact('user'));
     }
 
+    public function edit(){
+        
+    }
+
 }
