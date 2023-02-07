@@ -29,7 +29,7 @@
                 <div class="sidebar col-lg-2 collapse d-lg-block" id="navbarSupportedContent">
                     <a href="/dashboard" @if(request()->route()->uri == 'dashboard')class='active' @endif class="sidebar-title"><i class="bi bi-house-door"></i>Dashboard</a>
                     <a href="/user" @if(request()->route()->uri == 'user')class='active' @endif class="sidebar-title"><i class="bi bi-people"></i>Users</a>
-                    <a href="/book" @if(request()->route()->uri == 'book')class='active' @endif class="sidebar-title"><i class="bi bi-book"></i>Books</a>
+                    <a href="{{route('books')}}" @if(request()->route()->uri == 'books')class='active' @endif class="sidebar-title"><i class="bi bi-book"></i>Books</a>
                     <a href="/category" @if(request()->route()->uri == 'category')class='active' @endif class="sidebar-title"><i class="bi bi-tags"></i>Categories</a>
                     <a href="/rent-log" @if(request()->route()->uri == 'rent-log')class='active' @endif class="sidebar-title"><i class="bi bi-door-open"></i>Rent Logs</a>
                     <a href="/login" class="sidebar-title"><i class="bi bi-box-arrow-left"></i>Logout</a>

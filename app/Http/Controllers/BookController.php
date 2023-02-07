@@ -11,13 +11,18 @@ class BookController extends Controller
         return view('welcome');
     }
 
+    public function book(){
+        $book = Book::get();
+        return view('dashboard.book', compact('book'));
+    }
+
     public function addBook(){
-        return view('admin.create-book');
+        return view('dashboard.create-book');
     }
 
     public function createBook(Request $request){
         $book = $request->validate([
-            'tittle' => 'required',
+            'title' => 'required',
             'author' => 'required',
             'publisher' => 'required',
             'release_date' => 'required',

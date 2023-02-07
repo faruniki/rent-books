@@ -6,6 +6,7 @@ use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\BookController;
 
 
 /*
@@ -36,10 +37,6 @@ Route::get('dashboard', function () {
 //     return view('dashboard.user');
 // });
 
-Route::get('book', function () {
-    return view('dashboard.book');
-});
-
 Route::get('category', function () {
     return view('dashboard.category');
 });
@@ -69,3 +66,8 @@ Route::post('/storeLogin', [LoginController::class, 'login'])->name('storeLogin'
 
 Route::post('/storeMessage',[MessageController::class,'message'])->name('message');
 
+
+Route::get('/books', [BookController::class, 'book'])->name('books');
+Route::get('/addBook', [BookController::class, 'addBook'])->name('addBook');
+Route::post('/createBook', [BookController::class, 'createBook'])->name('createBook');
+Route::post('/deleteBook', [BookController::class, 'deleteBook'])->name('deleteBook');

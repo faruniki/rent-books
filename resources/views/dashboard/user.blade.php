@@ -28,8 +28,8 @@
                 <td>
                     <form action="{{route('deleteUser', $users->id)}}" method="post">
                         @csrf
-                        <a href="{{route('editUser', $users->id)}}" class="btn btn-primary edit-button" style="border-radius: 3px;">Edit</a>
-                        <button class="btn btn-danger delete-button" style="border-radius: 3px;">Delete</button>
+                        <a href="{{route('editUser', $users->id)}}" class="btn btn-primary edit-button" style="border-radius: 3px; font-size: 12px;">Edit</a>
+                        <button class="btn btn-danger delete-button" style="border-radius: 3px; font-size: 12px;">Delete</button>
                     </form>
                 </td>
             </tr>
