@@ -67,12 +67,13 @@ Route::post('/storeLogin', [LoginController::class, 'login'])->name('storeLogin'
 
 Route::post('/storeMessage',[MessageController::class,'message'])->name('message');
 
-
+//books
 Route::get('/books', [BookController::class, 'book'])->name('books');
 Route::get('/addBook', [BookController::class, 'addBook'])->name('addBook');
 Route::post('/createBook', [BookController::class, 'createBook'])->name('createBook');
 Route::post('/deleteBook{id}', [BookController::class, 'deleteBook'])->name('deleteBook');
 
+//category
 Route::get('/addCategory', [CategoryController::class, 'addCategory'])->name('addCategory');
 Route::post('/createCategory', [CategoryController::class, 'createCategory'])->name('createCategory');
 Route::post('/deleteCategory{id}', [CategoryController::class, 'deleteCategory'])->name('deleteCategory');
