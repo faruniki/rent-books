@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #000;
+}
+
+.linklogo {
+    text-decoration: none;
+}
+
+.container {
+    height: 649px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container div {
+    height: 100%;
+}
+
+.container .kiri {
+    background-color: rgb(23, 23, 23);
+    width: 40%;
+}
+
+.container .kiri .wikbooks {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFF;
+    max-width: fit-content;
+    display: block;
+        margin-left: 20px;
+}
+
+.container .kiri .wikbooks:hover {
+    color: #1ED760;
+}
+
+.formlogin {
+    margin-top: 10px;
+    line-height: 10px;
+}
+
+.labelcoi {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 600;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.inputform {
+    width: 400px;
+    height: 50px;
+    border: solid 0px;
+    border-radius: 3px;
+    background-color: #2b2b2b;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 400;
+    font-size: 13px;
+    padding-left: 20px;
+    color: #FFF;
+        margin-top: 15px;
+}
+
+.checkcoi {
+    border: solid 0px;
+}
+
+.checklabel {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFF;
+        margin-right: 310px;
+}
+
+.submitcoi {
+    border-radius: 100px;
+    width: 420px;
+    height: 50px;
+    border: solid 0px;
+    background-color: #1DB954;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFF;
+}
+
+.donthave {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFF;
+        margin-top: 30px;
+}
+
+.donthave a {
+    color: #FFF;
+    text-decoration-color: white;
+}
+
+.donthave a:hover {
+    color: #1ED760;
+    text-decoration-color: #1ED760;
+}
+
+.container .kanan {
+    /* background-image: linear-gradient(to right bottom, #104121 , #1ED760); */
+    background-image: url('../img/bg-2.jpg');
+    
+    width: 60%;
+}
+
+.container .kanan .join {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFF;
+    line-height: 40px;
+        margin-top: 230px;
+        margin-left: 90px;
+}
+
+.container .kanan .youcan {
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
+        margin-top: -35px;
+        margin-left: 90px;
+}

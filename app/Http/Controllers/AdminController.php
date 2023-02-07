@@ -16,8 +16,33 @@ class AdminController extends Controller
         return view('dashboard.user', compact('user'));
     }
 
-    public function edit(){
-        
+    public function deleteUser(Request  $request, $id)
+    {
+        User::where('id', $id)->delete();
+        return redirect(route('user'));
+    }
+
+    public function editUser($id){
+        $user = User::where('id', $id)->first();
+        return view('dashboard.edit-user', compact('user'));
+    }
+    public function updateUser(Request $request, $id){
+        $request->validate([
+            'username' => 'required',
+            'email' => 'required',
+            'phone' => 'required',
+            'address' => 'required',
+        ]);
+
+        $user = User::where('id', $id)->first();
+
+        $user->update([
+            'username' => $request->username,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'address' => $request->address,
+        ]);
+        return redirect(route('user'))->with('edit', 'Berhasil edit data user');
     }
 
 }

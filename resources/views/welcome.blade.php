@@ -10,7 +10,7 @@
 <body style="background-color: #222222;">
 
 <!-- navbar -->
-<nav class="navbar navbar-dark navbar-expand-lg bg-danger">
+<nav class="navbar navbar-dark navbar-expand-lg bg-success">
     <div class="container">
         <a class="navbar-brand" href="/">
             <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Bootstrap" width="30" height="24">
@@ -34,7 +34,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-outline-danger btn-sm" href="{{route('login')}}">Login</a>
+                    <a class="nav-link btn btn-outline-success btn-sm" href="{{route('login')}}">Login</a>
                 </li>
             </ul>
         </div>
@@ -71,7 +71,7 @@
         <div class="row">
             <div class="col-4">
                 <h2 class="text-light">Rent Books</h2>
-                <a href="{{route('register')}}" class="btn btn-outline-danger mt-1 text-light">Ayo Daftar Sekarang!</a>
+                <a href="{{route('register')}}" class="btn btn-outline-success mt-1 text-light">Ayo Daftar Sekarang!</a>
             </div>
             <div class="col-8 text-light">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio magni aperiam animi, quas adipisci ab voluptatum aliquid vero quos laudantium illum! Nihil doloribus qui quam deserunt amet odio voluptatibus tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea reiciendis iste nulla magnam, neque repellat nemo laudantium vero porro cumque error non, quas adipisci.</p>
@@ -81,7 +81,7 @@
 <!-- akhir jumbotron -->
 
 <!-- card popular books -->
-<section style="background-color: #DC3545;">
+<section class="bg-success">
     <div class="container my-5">
         <div class="row text-center">
             <h2 class="mt-5 text-light">Popular Books</h2>
@@ -93,7 +93,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Mistery Terakhir</h5>
                         <p class="card-text">Thriller, Mystery</p>
-                        <a href="#" class="btn btn-danger">Read</a>
+                        <a href="#" class="btn btn-success">Read</a>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Uzumaki</h5>
                         <p class="card-text">Comic, Horror, Thriller</p>
-                        <a href="#" class="btn btn-danger">Read</a>
+                        <a href="#" class="btn btn-success">Read</a>
                     </div>
                 </div>
             </div>
@@ -113,7 +113,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Afeksi</h5>
                         <p class="card-text">Novel, Drama</p>
-                        <a href="#" class="btn btn-danger">Read</a>
+                        <a href="#" class="btn btn-success">Read</a>
                     </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@
                     <label for="message" class="form-label text-light">Message</label>
                     <textarea class="form-control" id="message" name="message"></textarea>
                 </div>
-                <button type="submit" class="btn btn-danger">Send</button>
+                <button type="submit" class="btn btn-success">Send</button>
             </form>
         </div>
     </div>
@@ -147,7 +147,7 @@
 <!-- akhir contact -->
 
 <!-- footer -->
-<footer class="bg-danger mt-5" style="height: 40px;">
+<footer class="bg-success mt-5" style="height: 40px;">
     <p class="text-center text-light pt-2">Created by <a href="https://github.com/faruniki" target="_blank" style="text-decoration: none; color: #fff;"><b>&#169;</b> Nazib Akbar</a></p>
 </footer>
 <!-- akhir footer -->

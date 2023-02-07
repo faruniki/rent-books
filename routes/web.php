@@ -4,6 +4,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -51,12 +54,18 @@ Route::get('edit', function () {
 
 //route admin
 Route::get('/user', [AdminController::class, 'users'])->name('user');
+Route::get('/editUser/{id}', [AdminController::class, 'editUser'])->name('editUser');
+Route::post('/updateUser/{id}', [AdminController::class, 'updateUser'])->name('updateUser');
+Route::post('/deleteUser/{id}', [AdminController::class, 'deleteUser'])->name('deleteUser');
+
 
 //route register
-Route::get('/register',[AuthController::class, 'indexRegister'])->name('register');
-Route::post('/storeRegister',[AuthController::class, 'storeRegister'])->name('storeRegister');
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
+Route::post('/storeRegister', [RegisterController::class, 'storeRegister'])->name('storeRegister');
 
-Route::get('/login',[AuthController::class, 'indexLogin'])->name('login');
+//route login
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/storeLogin', [LoginController::class, 'login'])->name('storeLogin');
 
 Route::post('/storeMessage',[MessageController::class,'message'])->name('message');
 
