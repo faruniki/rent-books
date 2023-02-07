@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\CategoryController;
 
 
 /*
@@ -70,4 +71,9 @@ Route::post('/storeMessage',[MessageController::class,'message'])->name('message
 Route::get('/books', [BookController::class, 'book'])->name('books');
 Route::get('/addBook', [BookController::class, 'addBook'])->name('addBook');
 Route::post('/createBook', [BookController::class, 'createBook'])->name('createBook');
-Route::post('/deleteBook', [BookController::class, 'deleteBook'])->name('deleteBook');
+Route::post('/deleteBook{id}', [BookController::class, 'deleteBook'])->name('deleteBook');
+
+Route::get('/addCategory', [CategoryController::class, 'addCategory'])->name('addCategory');
+Route::post('/createCategory', [CategoryController::class, 'createCategory'])->name('createCategory');
+Route::post('/deleteCategory{id}', [CategoryController::class, 'deleteCategory'])->name('deleteCategory');
+

@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="col-sm-12 table-coi">
-    <form action="{{route('addBook')}}">
+    <form action="{{route('addCategory')}}">
         <button type="submit" class="add-button">Add+</button>
     </form>
     <table class="table">
