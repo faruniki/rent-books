@@ -51,7 +51,7 @@ Route::get('edit', function () {
 });
 
 //route admin
-Route::get('/user', [AdminController::class, 'users'])->name('user');
+Route::get('/user', [AdminController::class, 'users'])->name('user')->middleware('admin');
 Route::get('/editUser/{id}', [AdminController::class, 'editUser'])->name('editUser');
 Route::post('/updateUser/{id}', [AdminController::class, 'updateUser'])->name('updateUser');
 Route::post('/deleteUser/{id}', [AdminController::class, 'deleteUser'])->name('deleteUser');
@@ -74,6 +74,7 @@ Route::post('/createBook', [BookController::class, 'createBook'])->name('createB
 Route::post('/deleteBook{id}', [BookController::class, 'deleteBook'])->name('deleteBook');
 
 //category
+Route::get('/category', [CategoryController::class, 'category'])->name('categories');
 Route::get('/addCategory', [CategoryController::class, 'addCategory'])->name('addCategory');
 Route::post('/createCategory', [CategoryController::class, 'createCategory'])->name('createCategory');
 Route::post('/deleteCategory{id}', [CategoryController::class, 'deleteCategory'])->name('deleteCategory');

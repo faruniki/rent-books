@@ -19,10 +19,17 @@ class LoginController extends Controller
 
         if(Auth::attempt($login)){
             $request->session()->regenerate();
-            return redirect()->intended('/dashboard');
+            if(Auth::user() && Auth::user()->isAdmin == true){
+                return redirect('/dashboard');
+            }
+            return redirect()->intended('/login');
         }
 
-        return back()->with('loginerror', 'Login gagal, silahkan coba lagi');
+        return back()->withErrors([
+            'email' => 'The provided credentials does not match our records!',
+        ])->onlyInput('email');
+
+        // return back()->with('loginerror', 'Login gagal, silahkan coba lagi');
     }
 
     public function logout(Request $request) {

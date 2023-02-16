@@ -6,6 +6,8 @@ use App\Models\Role;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
+use DB;
 
 class RoleSeeder extends Seeder
 {
@@ -16,21 +18,40 @@ class RoleSeeder extends Seeder
      */
     public function run()
     {
-        Schema::disableForeignKeyConstraints();
-        Role::truncate();
-        Schema::enableForeignKeyConstraints();
+        DB::table('users')->insert([
+            [
+                'username' => 'Najib',
+                'email' => 'najib.wikrama4@gmail.com',
+                'password' => Hash::make('najib123'),
+                'no_hp' => '0895379967344',
+                'address' => 'Bogor',
+                'isAdmin' => true,
+            ],
+            [
+                'username' => 'najip',
+                'email' => 'najip.van.gogh@gmail.com',
+                'password' => Hash::make('najip123'),
+                'no_hp' => '0895379967345',
+                'address' => 'Yogyakarta',
+                'isAdmin' => false,
+            ],
+        ]);
 
-        $data = [
-            'admin',
-            'client',
-        ];
+        // Schema::disableForeignKeyConstraints();
+        // Role::truncate();
+        // Schema::enableForeignKeyConstraints();
 
-        foreach($data as $value)
-        {
-            Role::insert([
-                'name' => $value
-            ]);
-        }
+        // $data = [
+        //     'admin',
+        //     'client',
+        // ];
+
+        // foreach($data as $value)
+        // {
+        //     Role::insert([
+        //         'name' => $value
+        //     ]);
+        // }
 
     }
 }
