@@ -8,6 +8,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\UserController;
 
 
 /*
@@ -50,12 +51,18 @@ Route::get('edit', function () {
     return view('dashboard.edit');
 });
 
+Route::get('homeuser', function () {
+    return view('layouts.user');
+});
+
 //route admin
 Route::get('/user', [AdminController::class, 'users'])->name('user')->middleware('admin');
 Route::get('/editUser/{id}', [AdminController::class, 'editUser'])->name('editUser');
 Route::post('/updateUser/{id}', [AdminController::class, 'updateUser'])->name('updateUser');
 Route::post('/deleteUser/{id}', [AdminController::class, 'deleteUser'])->name('deleteUser');
 
+//route user
+Route::get('/index', [UserController::class, 'index'])->name('index');
 
 //route register
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
