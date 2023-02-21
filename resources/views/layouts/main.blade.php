@@ -32,7 +32,10 @@
                     <a href="{{route('books')}}" @if(request()->route()->uri == 'books')class='active' @endif class="sidebar-title"><i class="bi bi-book"></i>Books</a>
                     <a href="/category" @if(request()->route()->uri == 'category')class='active' @endif class="sidebar-title"><i class="bi bi-tags"></i>Categories</a>
                     <a href="/rent-log" @if(request()->route()->uri == 'rent-log')class='active' @endif class="sidebar-title"><i class="bi bi-door-open"></i>Rent Logs</a>
-                    <a href="/login" class="sidebar-title"><i class="bi bi-box-arrow-left"></i>Logout</a>
+                    <form action="{{route('logout')}}" method="post" class="sidebar-title">
+                        @csrf
+                        <button type="submit" class="nav-link sidebar-title btn btn-outline-danger btn-sm" style=" height: 30px; margin-left:25px; width:85px; margin-top: 10px;" name="logout"><i class="bi bi-box-arrow-left"></i> Logout</button>
+                    </form>
                 </div>
                 <div class="content col-lg-10">
                     @yield('content')

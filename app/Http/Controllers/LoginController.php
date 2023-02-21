@@ -32,7 +32,7 @@ class LoginController extends Controller
         // return back()->with('loginerror', 'Login gagal, silahkan coba lagi');
     }
 
-    public function logout(Request $request) {
+    public function logout() {
         Auth::logout();
         request()->session()->invalidate();
         request()->session()->regenerateToken();
