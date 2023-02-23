@@ -24,7 +24,7 @@ use App\Http\Controllers\UserController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 //route fe
 Route::get('main', function () {
@@ -63,7 +63,7 @@ Route::post('/updateUser/{id}', [AdminController::class, 'updateUser'])->name('u
 Route::post('/deleteUser/{id}', [AdminController::class, 'deleteUser'])->name('deleteUser')->middleware('auth');
 
 //route user
-Route::get('/home', [UserController::class, 'index'])->name('index');
+Route::get('/home', [UserController::class, 'index'])->name('index')->middleware('user');
 
 //route register
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
