@@ -38,4 +38,26 @@ class BookController extends Controller
         Book::where('id', $id)->delete();
         return redirect(route('books'));
     }
+    
+    public function editBook($id){
+        $book = Book::where('id', $id)->first();
+        return view('dashboard.edit-book', compact('book'));
+    }
+
+    public function updateBook(Request $request, $id){
+        $book = $request->validate([
+            'title' => 'required',
+            'author' => 'required',
+            'publisher' => 'required',
+            'release_date' => 'required',
+            'cover' => 'required',
+        ]);
+
+        $book = Book::where('id', $id)->first();
+
+        $book->update($request->all());
+
+        return redirect('books');
+    }
 }
+

@@ -31,7 +31,7 @@
                 <td>
                     <form action="{{route('deleteCategory', $categories->id)}}" method="post">
                         @csrf
-                        <a href="" class="btn btn-primary" style="border-radius: 3px; font-size: 12px;">Edit</a>
+                        <a href="{{route('editCategory', $categories->id)}}" class="btn btn-primary" style="border-radius: 3px; font-size: 12px;">Edit</a>
                         <button class="btn btn-danger" style="border-radius: 3px; font-size: 12px;">Delete</button>
                     </form>
                 </td>

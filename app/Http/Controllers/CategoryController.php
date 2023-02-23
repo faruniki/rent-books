@@ -34,4 +34,21 @@ class CategoryController extends Controller
         Category::where('id', $id)->delete();
         return redirect(route('categories'));
     }
+
+    public function editCategory($id){
+        $category = Category::where('id', $id)->first();
+        return view('dashboard.edit-category', compact('category'));
+    }
+
+    public function updateCategory(Request $request, $id){
+        $category = $request->validate([
+            'name' => 'required'
+        ]);
+
+        $category = Category::where('id', $id)->first();
+
+        $category->update($request->all());
+
+        return redirect('category');
+    }
 }

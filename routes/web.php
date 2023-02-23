@@ -83,10 +83,15 @@ Route::get('/books', [BookController::class, 'book'])->name('books')->middleware
 Route::get('/addBook', [BookController::class, 'addBook'])->name('addBook')->middleware('auth');
 Route::post('/createBook', [BookController::class, 'createBook'])->name('createBook');
 Route::post('/deleteBook{id}', [BookController::class, 'deleteBook'])->name('deleteBook');
+Route::get('/editBook/{id}', [BookController::class, 'editBook'])->name('editBook')->middleware(['admin', 'auth']);;
+Route::post('/updateBook/{id}', [BookController::class, 'updateBook'])->name('updateBook');
 
 //category
 Route::get('/category', [CategoryController::class, 'category'])->name('categories')->middleware('auth');
 Route::get('/addCategory', [CategoryController::class, 'addCategory'])->name('addCategory')->middleware('auth');
 Route::post('/createCategory', [CategoryController::class, 'createCategory'])->name('createCategory');
 Route::post('/deleteCategory/{id}', [CategoryController::class, 'deleteCategory'])->name('deleteCategory');
+Route::get('/editCategory/{id}', [CategoryController::class, 'editCategory'])->name('editCategory')->middleware(['admin', 'auth']);;
+Route::post('/updateCategory/{id}', [CategoryController::class, 'updateCategory'])->name('updateCategory');
+
 

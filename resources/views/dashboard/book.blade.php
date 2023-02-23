@@ -39,7 +39,7 @@
                 <td>
                     <form action="{{route('deleteBook', $books->id)}}" method="post">
                         @csrf
-                        <a href="" class="btn btn-primary" style="border-radius: 3px; font-size: 12px;">Edit</a>
+                        <a href="{{route('editBook', $books->id)}}" class="btn btn-primary" style="border-radius: 3px; font-size: 12px;">Edit</a>
                         <button class="btn btn-danger" style="border-radius: 3px; font-size: 12px;">Delete</button>
                     </form>
                 </td>
