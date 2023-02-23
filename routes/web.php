@@ -63,7 +63,7 @@ Route::post('/updateUser/{id}', [AdminController::class, 'updateUser'])->name('u
 Route::post('/deleteUser/{id}', [AdminController::class, 'deleteUser'])->name('deleteUser')->middleware('auth');
 
 //route user
-Route::get('/index', [UserController::class, 'index'])->name('index');
+Route::get('/home', [UserController::class, 'index'])->name('index');
 
 //route register
 Route::get('/register', [RegisterController::class, 'index'])->name('register');

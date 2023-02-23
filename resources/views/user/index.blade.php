@@ -3,12 +3,18 @@
 @section('content')
 @section('title', 'Home')
 
+<style>
+    body {
+        background-color: #198754;
+    }
+</style>
+
 <section class="bg-success">
     <div class="container my-5">
         <div class="row text-center">
             <h2 class="mt-5 text-light">Popular Books</h2>
         </div>
-        <div class="row mt-5">
+        <div class="row mt-5 ms-4">
             <div class="col-md-4 mb-5"> 
                 <div class="card" style="width: 18rem;">
                     <img src="https://www.gramedia.com/blog/content/images/2020/05/misteri-terakhir_gramedia.jpg" class="card-img-top" alt="...">

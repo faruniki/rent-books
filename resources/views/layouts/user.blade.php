@@ -35,8 +35,14 @@
                     </ul>
                 </li>
                 <li class="nav-item">
+                @auth
+                    <form action="{{route('logout')}}" method="post">
+                        @csrf
+                        <button type="submit" class="nav-link btn btn-outline-success btn-sm" name="logout">Logout</button>
+                    </form>
+                    @else
                     <a class="nav-link btn btn-outline-success btn-sm" href="{{route('login')}}">Login</a>
-                </li>
+                    @endauth                </li>
 
             </ul>
         </div>
