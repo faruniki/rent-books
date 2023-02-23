@@ -10,7 +10,7 @@ form {
 }
 .container {
     background-color: #d4d4d4;
-}
+} 
 body {
   font-family: Arial;
 }
