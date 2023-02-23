@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class CategoryController extends Controller
 {
@@ -31,6 +32,6 @@ class CategoryController extends Controller
     
     public function deleteCategory(Request $request, $id){
         Category::where('id', $id)->delete();
-        return redirect(route('category'));
+        return redirect(route('categories'));
     }
 }

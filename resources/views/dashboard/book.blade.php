@@ -3,6 +3,12 @@
 @section('content')
 @section('title', 'Books')
 
+<style>
+    .table-dark th {
+        background-color: #222;
+        color: #fff;
+    }
+</style>
 
 <div class="col-sm-12 table-coi">
     <form action="{{route('addBook')}}">

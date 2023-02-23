@@ -50,7 +50,7 @@
                         Categories
                     </div>
                     <div class="card-count">
-                        5
+                        {{$category->count()}}
                     </div>
                 </div>
             </div>

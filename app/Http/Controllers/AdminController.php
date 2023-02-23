@@ -5,13 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Book;
+use App\Models\Category;
 
 class AdminController extends Controller
 {
     public function dashboard(){
         $book = Book::get();
         $user = User::get();
-        return view('dashboard.index', compact('book', 'user'));
+        $category = Category::get();
+        return view('dashboard.index', compact('book', 'user', 'category'));
     }
 
     public function users(){

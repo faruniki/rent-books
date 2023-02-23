@@ -9,6 +9,31 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
+<style>
+    .sidebar button{
+    background-color: #222;
+    color: #FFF;
+    font-size: 14px;
+    border: none;
+    display: block;
+    padding: 20px 125px 20px 30px;
+}
+
+.sidebar button i {
+    margin-right: 8px;
+}
+
+.sidebar button:hover{
+    background-color: #000;
+    color: red;
+}
+
+.sidebar button.active{
+    background-color: #000;
+    border-right: solid 4px red;
+}
+</style>
+
 <body>
 
     <div class="main d-flex flex-column justify-content-between">
@@ -32,10 +57,7 @@
                     <a href="{{route('books')}}" @if(request()->route()->uri == 'books')class='active' @endif class="sidebar-title"><i class="bi bi-book"></i>Books</a>
                     <a href="/category" @if(request()->route()->uri == 'category')class='active' @endif class="sidebar-title"><i class="bi bi-tags"></i>Categories</a>
                     <a href="/rent-log" @if(request()->route()->uri == 'rent-log')class='active' @endif class="sidebar-title"><i class="bi bi-door-open"></i>Rent Logs</a>
-                    <form action="{{route('logout')}}" method="post" class="sidebar-title">
-                        @csrf
-                        <button type="submit" class="nav-link sidebar-title btn btn-outline-danger btn-sm" style=" height: 30px; margin-left:25px; width:85px; margin-top: 10px;" name="logout"><i class="bi bi-box-arrow-left"></i> Logout</button>
-                    </form>
+                    <form action="{{route('logout')}}" method="post">@csrf<button ><i class="bi bi-box-arrow-left"></i>Logout</button></form>
                 </div>
                 <div class="content col-lg-10">
                     @yield('content')

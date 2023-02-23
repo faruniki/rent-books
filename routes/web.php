@@ -88,5 +88,5 @@ Route::post('/deleteBook{id}', [BookController::class, 'deleteBook'])->name('del
 Route::get('/category', [CategoryController::class, 'category'])->name('categories')->middleware('auth');
 Route::get('/addCategory', [CategoryController::class, 'addCategory'])->name('addCategory')->middleware('auth');
 Route::post('/createCategory', [CategoryController::class, 'createCategory'])->name('createCategory');
-Route::post('/deleteCategory{id}', [CategoryController::class, 'deleteCategory'])->name('deleteCategory');
+Route::post('/deleteCategory/{id}', [CategoryController::class, 'deleteCategory'])->name('deleteCategory');
 
