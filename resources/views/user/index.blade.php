@@ -1,7 +1,7 @@
 @extends('layouts.user')
 
 @section('content')
-@section('title', 'Home')
+@section('title', 'Home User')
 
 <style>
     body {
